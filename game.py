@@ -5,7 +5,7 @@ comp_choice = 0
 
 def user_choose():
     print("")
-    choice = input("Choose any amongest Rock, Paper, Scissor:  ")
+    choice = input("Choose any one from Rock[r/R], Paper[p/P], Scissor[s/S]:  ")
     if choice in ["Rock", "r", "rock", "ROCK", "R"]:
         choice = "r"
 
@@ -77,6 +77,16 @@ while True:
     if choice3 == "y":
         pass
     elif choice3 == "n":
+        print('Final score:\n  User: {0}\n  Computer: {1}'.format(str(user_choice), str(comp_choice)))
+        if (user_choice > comp_choice):
+            print('Conrats, you won!')
+        else:
+            print('Better luck next time.')
         break
     else:
+        print('Final score:\n  User: {0}\n  Computer: {1}'.format(str(user_choice), str(comp_choice)))
+        if (user_choice > comp_choice):
+            print('Conrats, you won!')
+        else:
+            print('Better luck next time.')
         break                                         
